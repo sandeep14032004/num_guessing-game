@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>Number Guessing Game</h2>
+    </nav>
+    <div id="wrapper">
+       
+        <p>Try and guess a random number between 1 and 100</p>
+        <p>You have 10 attempts to guess the right number</p>
+        <br>
+        <form class="form" onsubmit="guessNumber(event)">
+            <label for="guessField" id="guess">Guess a number: </label><br>
+            <input type="text" id="guessField" class="guessField"><br><br>
+            <input type="submit" value="Submit Guess" id="subt" class="guessSubmit">
+        </form>
+        <div class="resultParas">
+            <p>Previous Guesses: <span class="guesses"></span></p>
+            <p>Guesses Remaining: <span class="lastResult">10</span></p>
+            <p class="lowOrHi"></p>
+        </div>
+    </div>
+    <div class="watermark">
+        <p>&copy; 2024 SANDEEP. All rights reserved.<br>Contact: 8260195633 , sandeeppati69@gmail.com</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/sandeep_27.2/" target="_blank"><img src="instagram.jpeg" alt="Instagram"></a>
+            <a href="https://x.com/sandeep_pati18" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/sandeep-pati-537ba030b/" target="_blank"><img src="linked in.webp" alt="LinkedIn"></a>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
